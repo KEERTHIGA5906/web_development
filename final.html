@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Webpage</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 4em;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: rgb(204, 194, 194);
+      color: #040303;
+    }
+
+    .title-bar {
+      background-color: #e9edef;
+      text-align: center;
+      padding: 1em;
+      margin-bottom: 2em;
+      
+      font-size: 18px;
+      display: flex;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2em;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 3em 0;
+      gap: 50px;
+    }
+
+    .image-container div {
+      margin: 1em;
+      width: 250px;
+      height: 230px;
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container div:hover {
+      transform: scale(1.1);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 150px;
+      object-fit: fill;
+      border-radius: 20px;
+    }
+
+    .image-description {
+      text-align: center;
+      margin-top: 1em;
+      font-style: italic;
+      border-radius: 8px;
+      padding: 5px;
+      font-size: 20px;
+      box-shadow: 2px 2px 10px #333;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background-color:beige;
+    }
+
+    .faq-container {
+      width: 80%;
+      margin: 50px auto 20px auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .faq-container h2 {
+      text-align: center;
+      font-size: 28px;
+      color: navy;
+      margin-bottom: 20px;
+    }
+
+    .faq-container details {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .faq-container summary {
+      font-size: 18px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .faq-container details[open] {
+      background-color: #e0eaff;
+    }
+
+    footer {
+      background-color: rgb(175, 173, 173);
+      width: 100%;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      margin: 10px 0 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 1em 0;
+      }
+
+      .title-bar {
+        flex-direction: column;
+      }
+
+      .title-bar img {
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="title-bar">
+    <img src="STK-20250717-WA0006.webp" style="padding-right:50px;height:120px;">
+    <h4 style="color: navy;text-align:center;">KPR INSTITUTE OF ENGINEERING AND TECHNOLOGY</h4>
+  </div>
+  <div class="container">
+    <p style="font-style:bold ;font-size: x-large;padding-top: 25px; padding-left:25%;padding-right:25%; font-size: 17px;;">
+      "At KPRIET, we empower minds and engineer futures where innovation meets education, shaping tomorrow’s leaders beyond boundaries."
+    </p>
+  </div>
+
+    <div class="image-container">
+      <div>
+        <img src="WhatsApp Image 2025-07-15 at 15.04.31_9ad5c520.jpg" alt="MBA">
+        <p class="image-description">MBA</p>
+      </div>
+      <div>
+        <img src="pic/WhatsApp Image 2025-07-15 at 15.10.52_023eb45c.jpg" alt="B.E">
+        <p class="image-description">B.E</p>
+      </div>
+      <div>
+        <img src="pic/WhatsApp Image 2025-07-15 at 15.10.52_b91e1897.jpg" alt="M.E">
+        <p class="image-description">M.E</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <div>
+        <img src="pic/pic.jpg" alt="CSE">
+        <p class="image-description">CSE</p>
+      </div>
+      <div>
+        <img src="pic/WhatsApp Image 2025-07-17 at 15.57.17_0fb70240.jpg" alt="CH">
+        <p class="image-description">CH</p>
+      </div>
+      <div>
+        <img src="pic/WhatsApp Image 2025-07-17 at 15.57.17_afaa2e9f.jpg" alt="ECE">
+        <p class="image-description">ECE</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section Replacing Table -->
+    <div class="faq-container">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+
+      <details>
+        <summary><strong>1. What is the KPR ERP Portal?</strong></summary>
+        <p>The KPR ERP Portal is a platform designed to streamline academic and administrative tasks for students and faculty.</p>
+      </details>
+
+      <details>
+        <summary><strong>2. How can I check my grades?</strong></summary>
+        <p>You can log in to the portal and navigate to the 'Academics' section to view your grades.</p>
+      </details>
+
+      <details>
+        <summary><strong>3. Who can access the portal?</strong></summary>
+        <p>Both students and faculty members can access the portal with their institutional login credentials.</p>
+      </details>
+    </div>
+
+  </div>
+
+  <footer style="background-color: navy;color:white;margin-top:60px ;padding: 20px 0px 20px 0px;">
+    KPR Institute of Engineering and Technology
+   
+    ,Avinashi Road, Arasur,
+    Coimbatore – 641 407
+ 
+  </footer>
+
+</body>
+</html>
